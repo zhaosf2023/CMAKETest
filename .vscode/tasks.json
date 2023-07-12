@@ -1,0 +1,37 @@
+{
+    "options": {
+        "cwd": "${workspaceFolder}/build"
+    },
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "task-cmake",
+            "command": "cmake",
+            "args": [
+                "..",
+            ],
+            "detail": "执行cmake指令构建makefile文件任务"
+        },
+        {
+            "label": "task-make",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "command": "cmake",
+            "args": [
+            ],
+            "detail": "执行make指令任务"
+        },
+        {
+            "label": "task-build",
+            "dependsOrder": "sequence", //按列出的顺序执行任务依赖项
+            "dependsOn":[
+                "task-cmake",
+                "task-make"
+            ],
+            "detail": "按顺序执行列出的任务"
+        }
+    ],
+    "version": "2.0.0"
+}

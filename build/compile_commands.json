@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/stu/CodeTest/CMakeTest/build",
+  "command": "/usr/bin/gcc  -I/home/stu/CodeTest/CMakeTest/include  -g   -o CMakeFiles/main.dir/main.c.o   -c /home/stu/CodeTest/CMakeTest/main.c",
+  "file": "/home/stu/CodeTest/CMakeTest/main.c"
+},
+{
+  "directory": "/home/stu/CodeTest/CMakeTest/build",
+  "command": "/usr/bin/gcc  -I/home/stu/CodeTest/CMakeTest/include  -g   -o CMakeFiles/main.dir/src/hello.c.o   -c /home/stu/CodeTest/CMakeTest/src/hello.c",
+  "file": "/home/stu/CodeTest/CMakeTest/src/hello.c"
+}
+]
